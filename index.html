@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deshi Deals</title>
     <!-- Tailwind + daisyUI CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
       rel="stylesheet"
+      type="text/css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Favicon  -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Nav Bar Design -->
-    <nav class="flex justify-center items-center">
+    <nav class="flex justify-center items-cente py-3 shadow">
       <div>
         <img src="" alt="" />
       </div>
@@ -28,18 +29,206 @@
       </div>
     </nav>
     <!-- Hero Section Design -->
-    <section></section>
+    <section class="flex flex-col justify-center items-center my-32">
+      <div class="flex flex-col justify-center items-center">
+        <h2 class="text-[#111111] font-bold text-6xl">
+          Purchase TK 200 or above & get
+        </h2>
+        <p class="text-[#E527B2] font-bold text-6xl mt-4">20% off</p>
+      </div>
+      <div class="flex justify-center items-center my-6">
+        <p class="mr-12">Use Promo Code</p>
+        <button
+          class="bg-[#E527B2] w-48 text-white font-bold py-4 px-12 rounded-lg"
+        >
+          SELL200
+        </button>
+      </div>
+      <div>
+        <img src="./assets/hero-bg.png" alt="" />
+      </div>
+    </section>
     <!-- Shopping  Section Design -->
-     <section>
-    <!-- Shopping Left Side Product Card Design -->
-     <main>
+    <section class="w-11/12 mx-auto grid grid-cols-12 gap-8 p-4">
+      <!-- Shopping Left Side Product Card Design -->
+      <main class="col-span-9 p-2">
+        <!-- Kitchen Items Starts -->
+        <h1 class="mb-8 text-[#111111] font-bold text-4xl">Kitchenware</h1>
+        <div class="grid grid-cols-9 gap-4 p-4">
+          <!-- Kitchen Item-1 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/kitchen-1.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Kitchen Item-2 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/kitchen-2.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Kitchen Item-3 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/kitchen-3.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kitchen Items End -->
 
-     </main>
-    <!-- Shopping Right Side Cart Design -->
-     <aside>
+        <!-- Sports Items Starts -->
+        <h1 class="my-8 text-[#111111] font-bold text-4xl">Sportswear</h1>
+        <div class="grid grid-cols-9 gap-4 p-4">
+          <!-- Sports Item-1 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/sports-1.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00 </span>TK</p>
+            </div>
+          </div>
+          <!-- Sports  Item-2 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/sports-2.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Sports  Item-3 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/sports-3.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+        <!-- sports Items End -->
 
-     </aside>
-     </section>
+        <!-- Furniture Items Starts -->
+        <h1 class="my-8 text-[#111111] font-bold text-4xl">Furniture</h1>
+        <div class="grid grid-cols-9 gap-4 p-4">
+          <!-- Furniture Item-1 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/furniture-1.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Furniture  Item-2 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/furniture-2.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+          <!-- Furniture  Item-3 -->
+          <div class="col-span-3 bg-white p-5">
+            <figure
+              class="bg-[#1111110d] flex justify-center items-center mb-5 rounded-lg"
+            >
+              <img src="./assets/furniture-3.png" class="p-5" alt="" />
+            </figure>
+            <div class="flex flex-col justify-center items-center">
+              <span>⭐⭐⭐⭐⭐</span>
+              <h3 class="text-[#111111] font-bold text-xl my-2">
+                K. Accessories
+              </h3>
+              <p class="text-[#11111180] font-normal text-xl"><span>39.00</span> TK</p>
+            </div>
+          </div>
+        </div>
+        <!-- Furniture Items End -->
+      </main>
+      <!-- Shopping Right Side Cart Design -->
+      <aside class="col-span-3 p-4">
+        <div class="p-4 bg-white rounded-lg shadow">
+          <h2 class="mb-4 text-[#111111] font-normal text-xl">Have a Coupon</h2>
+          <div class="join">
+            <input class="input join-item" placeholder="Coupon Code" />
+            <button class="btn join-item rounded-r bg-[#E527B2] text-white">Apply</button>
+          </div>
+        </div>
+        <div id="cart-container" class="shadow"></div>
+        <div class="bg-white shadow my-12">
+          <p>Total price: <span>0.00</span>TK</p>
+          <p>Discount : <span>0.00</span>TK</p>
+          <p>Total: <span>0.00</span>TK</p>
+        </div>
+        <div>
+          <button
+          class="bg-[#E527B2] w-48 text-white font-bold py-4 px-12 rounded-lg w-full"
+        >
+          Make Purchase
+        </button>
+        </div>
+      </aside>
+    </section>
     <!-- JS Script -->
     <script src="./js/script.js"></script>
   </body>
